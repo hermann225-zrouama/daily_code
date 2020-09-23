@@ -20,6 +20,7 @@ def bonus(array, k):
     for i in range(len(array)):
         if (abs(k - array[i])) in array[i + 1:]:
             return True
+    return False
 
 
 if __name__ == "__main__":
