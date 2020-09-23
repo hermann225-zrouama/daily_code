@@ -18,7 +18,7 @@ def day_one(array, k):
 
 def bonus(array, k):
     for i in range(len(array)):
-        if (k - array[i]) in array[i + 1:]:
+        if (abs(k - array[i])) in array[i + 1:]:
             return True
 
 
